@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — ChapterMarket</title>
+<meta name="description" content="Get in touch with ChapterMarket for support or inquiries about buying and selling books.">
+<style>
+/* Same CSS as before */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;scroll-behavior:smooth;background:#f5f7fa;color:#0b1220;line-height:1.5;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1200px;margin:0 auto;padding:20px;}
+:root{--primary:#0a6ef0;--secondary:#ff6f61;--accent:#f0c808;--muted:#6b7280;--card:#fff;--radius:14px;--shadow:0 6px 18px rgba(0,0,0,0.08);}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 0;background:linear-gradient(90deg,var(--primary),#7cc6ff);border-radius:0 0 12px 12px;color:white;position:sticky;top:0;z-index:1000;flex-wrap:wrap;}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;}
+.logo{width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:white;color:var(--primary);font-weight:700;font-size:20px;}
+nav{display:flex;flex-wrap:wrap;gap:12px;}
+nav a{margin-left:12px;font-weight:600;transition:0.3s;color:white;}
+nav a:hover{color:var(--accent);}
+.btn{padding:10px 18px;border:none;border-radius:12px;cursor:pointer;font-weight:700;transition:0.3s;}
+.btn-primary{background:var(--accent);color:white;}
+.btn-primary:hover{background:var(--secondary);}
+.btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.7);color:white;}
+.btn-ghost:hover{background:white;color:var(--primary);}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;font-size:20px;font-weight:700;color:#0a3c91;}
+.contact{background:#ffebee;padding:40px 20px;border-radius:16px;text-align:center;}
+.contact p{margin-bottom:10px;color:#333;}
+.contact form{display:flex;flex-direction:column;gap:15px;max-width:400px;margin:20px auto;}
+.contact input, .contact textarea{padding:12px;border-radius:10px;border:1px solid #ccc;font-size:14px;}
+.contact button{padding:12px;border:none;border-radius:10px;background:var(--primary);color:white;cursor:pointer;transition:0.3s;}
+.contact button:hover{transform:scale(1.05);}
+footer{margin-top:40px;padding:20px;border-top:1px solid #ddd;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#555;font-size:14px;}
+footer a{color:var(--primary);}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <a class="brand" href="chaptermarket.html">  <!-- Updated to point to the main page -->
+    <div class="logo">CM</div>
+    ChapterMarket
+  </a>
+  <nav>
+       <a href="categories.html">Categories</a>
+    <a href="howitworks.html">How it Works</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="newsletter.html">Newsletter</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="btn btn-ghost" onclick="window.location.href='chaptermarket.html'">List a Book</button>
+</header>
+
+<section class="contact">
+  <div class="section-title">Contact Us</div>
+  <p>Have questions about buying, selling, or anything else? We're here to help. Reach out and let's chat about books!</p>
+  <p>Email: support@chaptermarket.example</p>
+  <p>Phone: +92 300 1234567</p>
+  <p>Address: Islamabad, Pakistan</p>
+  <form action="#" method="post">  <!-- Placeholder form; add backend handling as needed -->
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p style="margin-top:20px;font-size:14px;color:#333;">We respond within 24 hours. For urgent issues, call us directly!</p>
+</section>
+
+<footer>
+  <div>© 2025 ChapterMarket. All Rights Reserved.</div>
+  <div>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

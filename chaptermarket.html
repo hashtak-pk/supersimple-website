@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ChapterMarket — Buy & Sell Books in Pakistan</title>
+<meta name="description" content="Buy and sell new, used, and rare books in Pakistan. Discover textbooks, novels, course books, and second-hand bargains. Fast listings, secure checkout, and trusted sellers.">
+<meta name="keywords" content="buy books online Pakistan, sell used books Pakistan, used textbooks, second hand books, cheap novels Pakistan, online bookstore Pakistan, book marketplace, college books, CSS books, Islamic books, engineering textbooks">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ChapterMarket — Buy & Sell Books" />
+<meta property="og:description" content="Pakistan's easiest marketplace to buy and sell new, used and rare books. Discover amazing deals and list your books for free." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://chaptermarket.example" />
+<meta property="og:image" content="https://chaptermarket.example/logo.png" />
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Marketplace",
+  "name": "ChapterMarket",
+  "url": "https://chaptermarket.example",
+  "description": "Buy and sell new, used and rare books in Pakistan.",
+  "logo": "https://chaptermarket.example/logo.png"
+}
+</script>
+
+<style>
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;scroll-behavior:smooth;background:#f5f7fa;color:#0b1220;line-height:1.5;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1200px;margin:0 auto;padding:20px;}
+
+/* Variables */
+:root{
+--primary:#0a6ef0;
+--secondary:#ff6f61;
+--accent:#f0c808;
+--muted:#6b7280;
+--card:#fff;
+--radius:14px;
+--shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Header */
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 0;background:linear-gradient(90deg,var(--primary),#7cc6ff);border-radius:0 0 12px 12px;color:white;position:sticky;top:0;z-index:1000;flex-wrap:wrap;}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;}
+.logo{width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:white;color:var(--primary);font-weight:700;font-size:20px;}
+nav{display:flex;flex-wrap:wrap;gap:12px;}
+nav a{margin-left:12px;font-weight:600;transition:0.3s;color:white;}
+nav a:hover{color:var(--accent);}
+.btn{padding:10px 18px;border:none;border-radius:12px;cursor:pointer;font-weight:700;transition:0.3s;}
+.btn-primary{background:var(--accent);color:white;}
+.btn-primary:hover{background:var(--secondary);}
+.btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.7);color:white;}
+.btn-ghost:hover{background:white;color:var(--primary);}
+
+/* Hero */
+.hero{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;background:linear-gradient(135deg,#7cc6ff,#f0f4f8);color:#0b1220;padding:60px 20px;border-radius:16px;}
+.hero h1{font-size:2.5rem;margin-bottom:16px;color:#0a3c91;animation:fadeInDown 1s ease;}
+.hero p{font-size:1.1rem;margin-bottom:20px;color:#333;}
+.hero .buttons{display:flex;gap:12px;flex-wrap:wrap;}
+.hero .search{display:flex;margin-top:20px;gap:10px;}
+.hero input{flex:1;padding:12px;border-radius:10px;border:1px solid #ccc;font-size:14px;}
+.hero button{padding:12px 16px;border:none;border-radius:10px;background:var(--primary);color:white;cursor:pointer;transition:0.3s;}
+.hero button:hover{transform:scale(1.05);}
+
+/* Cards Section */
+.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;font-size:20px;font-weight:700;color:#0a3c91;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}  /* Updated for 3 columns */
+.card{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);transition:0.3s;overflow:hidden;cursor:pointer;min-height: 300px;}
+.card:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 12px 20px rgba(0,0,0,0.15);}
+.cover{height:420px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);margin-bottom:10px;overflow:hidden;}
+.cover img{width:100%;height:100%;object-fit:cover;border-radius:12px;}
+.book-title{font-weight:700;font-size:16px;margin-bottom:6px;color:#0a3c91;}
+.muted{color:var(--muted);font-size:13px;}
+.price{font-weight:800;margin-top:8px;color:var(--secondary);}
+
+/* Footer */
+footer{margin-top:40px;padding:20px;border-top:1px solid #ddd;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#555;font-size:14px;}
+footer a{color:var(--primary);}
+
+/* Animations */
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px);}100%{opacity:1;transform:translateY(0);}}
+
+/* Responsive */
+@media(max-width:1024px){.hero{flex-direction:column;}header{flex-direction:column;align-items:flex-start;}nav{gap:8px;}}
+@media(max-width:768px){.grid{grid-template-columns:repeat(2,1fr);}} 
+@media(max-width:480px){.hero h1{font-size:2rem;}.grid{grid-template-columns:repeat(1,1fr);}}  
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<header>
+  <a class="brand" href="chaptermarket.html">  <!-- Updated to point to this renamed file -->
+    <div class="logo">CM</div>
+    ChapterMarket
+  </a>
+  <nav>
+        <a href="categories.html">Categories</a>
+    <a href="howitworks.html">How it Works</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="newsletter.html">Newsletter</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="btn btn-ghost" onclick="window.location.href='categories.html'">List a Book</button>
+</header>
+
+<!-- Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <div style="flex:1;">
+    <h1 id="hero-title">Buy & Sell Books in Pakistan — Fast & Easy</h1>
+    <p>Discover textbooks, novels, and rare books. Sell your old books and give your shelf a second life.</p>
+    <div class="buttons">
+      <button class="btn btn-primary" onclick="window.location.href='#browse'">Browse Books</button>  <!-- Scrolls to browse section on same page -->
+      <button class="btn btn-ghost" onclick="window.location.href='categories.html'">Sell a Book</button>
+    </div>
+    <div class="search">
+      <input placeholder="Search by title, author, ISBN, category..." />
+      <button>Search</button>
+    </div>
+  </div>
+  <aside style="flex:0.35;background:linear-gradient(180deg,#ffffff,#f6fbff);padding:16px;border-radius:16px;">
+    <h3>Featured Deal</h3>
+    <div style="font-weight:800">Introduction to Algorithms — $25</div>
+    <div class="muted">College textbook, good condition — free local pickup. Perfect for CS students like me who need it for finals!</div>
+    <button class="btn btn-primary" style="margin-top:12px;" onclick="window.location.href='#browse'">View Deal</button>  <!-- Scrolls to browse section -->
+  </aside>
+</section>
+
+<!-- Browse Books (Combined from browse.html) -->
+<section id="browse" style="background:#fef3f3;padding:40px 0;">
+  <div class="section-title">Popular Books</div>
+  <p style="margin-bottom:30px;color:#333;">Dive into our amazing selection of top books. From timeless classics to must-have textbooks, find something that sparks your interest. </p>
+  <div class="grid">
+
+    <div class="card">
+      <div class="cover"><img src="images/introduction to alogorithm.jpg" alt="Introduction to Algorithms"></div>
+      <div class="book-title">Introduction to Algorithms</div>
+      <div class="muted">Thomas H. Cormen</div>
+      <div class="price">$25</div>
+    </div>
+    <div class="card">
+      <div class="cover"><img src="images/Clean Code .jpg" alt="Clean Code"></div>
+      <div class="book-title">Clean Code</div>
+      <div class="muted">Robert C. Martin</div>
+      <div class="price">$18</div>
+    </div>
+    <div class="card">
+      <div class="cover"><img src="images/Designe Pattern .jpg" alt="Design Patterns"></div>
+      <div class="book-title">Design Patterns</div>
+      <div class="muted">Erich Gamma</div>
+      <div class="price">$22</div>
+    </div>
+
+    <!-- Added similar books -->
+
+    <div class="card">
+      <div class="cover"><img src="images/javascript.jpg" alt="Eloquent JavaScript"></div>
+      <div class="book-title">Eloquent JavaScript</div>
+      <div class="muted">Marijn Haverbeke</div>
+      <div class="price">$20</div>
+    </div>
+    <div class="card">
+      <div class="cover"><img src="images/python.jpg" alt="Python 3 for absolute beginners"></div>
+      <div class="book-title">Python 3 for beginners</div>
+      <div class="muted">Tim Hall and J.P.Stacey</div>
+      <div class="price">$15</div>
+    </div>
+    <div class="card">
+      <div class="cover"><img src="images/psychology.jpg" alt="Educational psychology For M.ED , M.A education"></div>
+      <div class="book-title">Educational psychology</div>
+      <div class="muted">Dr.Parwaiz Aslam</div>
+      <div class="price">$30</div>
+    </div>
+
+  </div>
+  <p style="margin-top:30px;text-align:center;color:#333;">Can't find what you're looking for? <a href="categories.html" style="color:var(--primary);">Explore more categories</a> or list your own book!</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div>© 2025 ChapterMarket. All Rights Reserved.</div>
+  <div>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

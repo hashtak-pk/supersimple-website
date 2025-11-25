@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How It Works — ChapterMarket</title>
+<meta name="description" content="Learn how to buy and sell books on ChapterMarket. Simple steps for a seamless experience.">
+<style>
+/* Same CSS as before */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;scroll-behavior:smooth;background:#f5f7fa;color:#0b1220;line-height:1.5;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1200px;margin:0 auto;padding:20px;}
+:root{--primary:#0a6ef0;--secondary:#ff6f61;--accent:#f0c808;--muted:#6b7280;--card:#fff;--radius:14px;--shadow:0 6px 18px rgba(0,0,0,0.08);}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 0;background:linear-gradient(90deg,var(--primary),#7cc6ff);border-radius:0 0 12px 12px;color:white;position:sticky;top:0;z-index:1000;flex-wrap:wrap;}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;}
+.logo{width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:white;color:var(--primary);font-weight:700;font-size:20px;}
+nav{display:flex;flex-wrap:wrap;gap:12px;}
+nav a{margin-left:12px;font-weight:600;transition:0.3s;color:white;}
+nav a:hover{color:var(--accent);}
+.btn{padding:10px 18px;border:none;border-radius:12px;cursor:pointer;font-weight:700;transition:0.3s;}
+.btn-primary{background:var(--accent);color:white;}
+.btn-primary:hover{background:var(--secondary);}
+.btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.7);color:white;}
+.btn-ghost:hover{background:white;color:var(--primary);}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;font-size:20px;font-weight:700;color:#0a3c91;}
+.three-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px;}
+.step{background:linear-gradient(135deg,#7cc6ff,#f0f4f8);padding:20px;border-radius:14px;text-align:center;transition:0.3s;cursor:pointer;position:relative;overflow:hidden;}
+.step:hover{transform:translateY(-6px) scale(1.05);box-shadow:var(--shadow);}
+.step h3{margin-bottom:10px;color:var(--primary);}
+.step p{color:#333;font-size:14px;}
+.step:nth-child(1){background-image:url('images/browse_background.jpg');background-size:cover;background-position:center;}
+.step:nth-child(2){background-image:url('images/buy_background.jpg');background-size:cover;background-position:center;}
+.step:nth-child(3){background-image:url('images/sell_background.jpg');background-size:cover;background-position:center;}
+.step:nth-child(4){background-image:url('images/connect_background.jpg');background-size:cover;background-position:center;}
+.step:nth-child(5){background-image:url('images/deliver_background.jpg');background-size:cover;background-position:center;}
+.step:nth-child(6){background-image:url('images/review_background.jpg');background-size:cover;background-position:center;}
+/* Overlay for readability */
+.step::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0.8);z-index:1;}
+.step h3, .step p{position:relative;z-index:2;}
+footer{margin-top:40px;padding:20px;border-top:1px solid #ddd;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#555;font-size:14px;}
+footer a{color:var(--primary);}
+@media(max-width:768px){.three-cols{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <a class="brand" href="chaptermarket.html">  <!-- Updated to point to the main page -->
+    <div class="logo">CM</div>
+    ChapterMarket
+  </a>
+  <nav>
+        <a href="categories.html">Categories</a>
+    <a href="howitworks.html">How it Works</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="newsletter.html">Newsletter</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="btn btn-ghost" onclick="window.location.href='chaptermarket.html'">List a Book</button>
+</header>
+
+<section style="background:#e0f7fa;padding:40px 0;">
+  <div class="section-title">How it Works</div>
+  <p style="margin-bottom:20px;color:#333;">Getting started is easy! Follow these simple steps to buy or sell books. I've sold my old textbooks in minutes—it's a game-changer.</p>
+  <div class="three-cols">
+    <div class="step">
+      <h3>Browse</h3>
+      <p>Search for books by category, title, or author. Use our filters to find the perfect match.</p>
+    </div>
+    <div class="step">
+      <h3>Buy</h3>
+      <p>Add your favorites to cart and checkout securely. We handle payments and shipping.</p>
+    </div>
+    <div class="step">
+      <h3>Sell</h3>
+      <p>List your books in minutes and reach thousands of buyers. Tips: Take clear photos and set fair prices!</p>
+    </div>
+    <!-- Added more steps -->
+    <div class="step">
+      <h3>Connect</h3>
+      <p>Chat with sellers or buyers directly. Build trust through our verified community.</p>
+    </div>
+    <div class="step">
+      <h3>Deliver</h3>
+      <p>Arrange pickup or delivery. Many users prefer local meetups for faster exchanges.</p>
+    </div>
+    <div class="step">
+      <h3>Review</h3>
+      <p>Leave feedback after transactions. This helps everyone have a great experience.</p>
+    </div>
+  </div>
+  <p style="margin-top:20px;text-align:center;color:#333;">Got questions? <a href="contact.html" style="color:var(--primary);">Contact us</a> or <a href="chaptermarket.html" style="color:var(--primary);">start browsing now</a>!</p>
+</section>
+
+<footer>
+  <div>© 2025 ChapterMarket. All Rights Reserved.</div>
+  <div>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
